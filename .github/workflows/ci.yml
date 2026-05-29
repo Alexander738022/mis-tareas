@@ -30,8 +30,8 @@ jobs:
 
       - name: Ejecutar Ruff
         run: |
-          ruff check .
+          python -m ruff check .
 
       - name: Ejecutar pruebas
         run: |
-          pytest
+          python -m pytest -v
